@@ -19,3 +19,10 @@
   types: [go]
   language: golang
   pass_filenames: false
+- id: go-import
+  name: go-import
+  description: Runs goimport
+  entry: goimport -w .
+  types: [go]
+  language: golang
+  pass_filenames: false
