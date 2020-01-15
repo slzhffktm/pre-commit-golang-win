@@ -1,8 +1,13 @@
-  
 - id: golangci-lint
   name: golangci-lint
   description: Fast linters runner for Go.
   entry: golangci-lint run --fix
+  types: [go]
+  language: golang
+  pass_filenames: false
+- id: go-fmt
+  name: gofmt
+  entry: gofmt
   types: [go]
   language: golang
   pass_filenames: false
