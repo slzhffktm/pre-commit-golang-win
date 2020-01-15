@@ -6,8 +6,16 @@
   language: golang
   pass_filenames: false
 - id: go-fmt
-  name: gofmt
-  entry: gofmt
+  name: go-fmt
+  description: Runs gofmt
+  entry: gofmt -w .
+  types: [go]
+  language: golang
+  pass_filenames: false
+- id: go-vet
+  name: go-vet
+  description: Runs go vet
+  entry: go vet ./...
   types: [go]
   language: golang
   pass_filenames: false
